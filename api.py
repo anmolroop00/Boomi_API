@@ -45,7 +45,7 @@ def mailRoute():
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(sender_email, "holfsjpsieaojbyc")
+    server.login(sender_email, "")
     text = msg.as_string() # Convert the message to a string
     server.sendmail(sender_email, receiver_email, text)
     server.quit()
